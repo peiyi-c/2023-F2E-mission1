@@ -1,3 +1,4 @@
+// GOOGLE FONTS //
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&display=swap");
 
 // COLORS //
@@ -8,11 +9,11 @@ $grey-3: #c6c6c6;
 $grey-4: #e2e2e2;
 $white: #ffffff;
 
-$lime: #a8c400;
-$lime-1: #bbe217;
-$lime-2: #d1fa31;
-$lime-3: #eeffa9;
-$lime-4: #fbffe1;
+$lime-1: #a8c400;
+$lime-2: #bbe217;
+$lime-3: #d1fa31;
+$lime-4: #eeffa9;
+$lime-5: #fbffe1;
 
 // SPACING //
 $sp-1: 0.25rem;
@@ -21,3 +22,58 @@ $sp-3: 1rem;
 $sp-4: 2rem;
 $sp-5: 3rem;
 $sp-6: 4rem;
+$sp-7: 5rem;
+
+// FONT-SIZE //
+$fs-1: 1rem;
+$fs-2: 1.25rem;
+$fs-3: 1.5rem;
+$fs-4: 1.75rem;
+$fs-5: 3rem;
+
+// RADIUS //
+
+$radius-1: 3rem;
+
+/* custom styles */
+:root {
+  background-color: $white;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.75;
+  font-weight: 500;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 23.4375rem;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+hr {
+  color: $grey-4;
+}
+
+.button-sm {
+  padding: $sp-2 $sp-3;
+  border-radius: $radius-1;
+
+  display: flex;
+  align-items: center;
+  gap: $sp-2;
+  background-color: $lime-3;
+
+  &:hover {
+    background-color: $lime-2;
+  }
+}

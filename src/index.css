@@ -1,24 +1,53 @@
-:root {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-  font-weight: 500;
-
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+hr {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+button,
+textarea {
+  background-color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
