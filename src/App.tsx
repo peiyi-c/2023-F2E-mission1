@@ -1,10 +1,15 @@
 import "./App.scss";
-import { Header } from "./components/Header";
-
+import { BrowserRouter } from "react-router-dom";
+import HeaderContainer from "./containers/HeaderContainer";
+import { BlurMessage } from "./containers/BlurContext";
 function App() {
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <BlurMessage>
+          <HeaderContainer />
+        </BlurMessage>
+      </BrowserRouter>
     </>
   );
 }
