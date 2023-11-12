@@ -1,1 +1,112 @@
 @use "../../App.scss" as *;
+.header {
+  border: 1px dashed gold; // test
+  padding: $sp-3;
+
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+
+  &__logo {
+    height: $sp-5;
+    width: auto;
+  }
+}
+
+.nav {
+  border: 1px dashed green; // test
+  height: 100vh;
+  width: 60vw;
+  padding: $sp-4 $sp-3;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: $white;
+
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out 0.5s;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__logo {
+    @extend .header__logo;
+    margin-bottom: $sp-4;
+  }
+
+  &__links {
+    border: 1px dashed salmon; // test
+    width: 100%;
+    li {
+      margin-bottom: $sp-3;
+      font-size: $fs-1;
+    }
+  }
+  &__icons {
+    border: 1px dashed fuchsia; // test
+    width: 100%;
+
+    li {
+      margin-top: $sp-3;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: $sp-1;
+      font-size: $fs-1;
+    }
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .header {
+    padding: $sp-3 $sp-6;
+    position: relative;
+    &__icon {
+      display: none;
+    }
+  }
+  .nav {
+    height: auto;
+    width: 60vw;
+    padding: $sp-3 0;
+
+    right: $sp-6;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      display: none;
+    }
+
+    &__links {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: $sp-4;
+      li {
+        margin-bottom: 0;
+      }
+    }
+    &__hr {
+      display: none;
+    }
+    &__icons {
+      width: auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: $sp-3;
+
+      li {
+        margin-top: 0;
+      }
+      &-name {
+        display: none;
+      }
+    }
+  }
+}
