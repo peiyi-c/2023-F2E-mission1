@@ -1,1 +1,133 @@
 @use "../../App.scss" as *;
+
+.hero {
+  border: 1px dotted palevioletred; // test
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  &__candidate {
+    padding: $sp-3;
+    margin: 0 auto;
+    //max-width: 22.5625rem;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-img {
+      width: 22.5625rem;
+    }
+
+    &-btn {
+      @extend .body-16;
+      position: relative;
+      left: -$sp-7;
+      bottom: $sp-7;
+    }
+  }
+  &__slogan {
+    padding: 0 $sp-3;
+    margin: 0 auto;
+    margin-top: -$sp-7;
+    width: 23.4375rem;
+    border-radius: $radius-1;
+    background-color: $grey-3;
+    font-weight: 700;
+
+    position: relative;
+
+    align-self: center;
+    .wrapper {
+      border: 1px dotted darkcyan;
+    }
+    &-big {
+      text-align: left;
+      color: $white;
+
+      font-size: $fs-6;
+      font-weight: 700;
+      line-height: 7.5rem;
+      letter-spacing: 0.25rem;
+    }
+    &-sm {
+      padding: $sp-2 $sp-3;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: $sp-2;
+      border-radius: $radius-3;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @extend .title-24;
+      background-color: $black;
+      color: $lime-3;
+      &-icon {
+        width: $fs-3;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .hero {
+    position: relative; // .hero__candidate
+    padding: 0 $sp-6;
+    &__candidate {
+      position: absolute;
+      right: $sp-4;
+    }
+    &__slogan {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  .hero {
+    &__candidate {
+    }
+    &__slogan {
+      &-big {
+        font-size: calc($fs-6 + 5vw);
+        line-height: calc(7.5rem + 5vh);
+        letter-spacing: calc(0.25rem + 1vw);
+      }
+      &-sm {
+        font-size: calc($fs-3 + 1vw);
+        line-height: calc(1.5rem + 1vw);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 80rem) {
+  .hero {
+    &__candidate {
+      top: 33%;
+    }
+    &__slogan {
+      &-big {
+        font-size: 16.25rem;
+        line-height: 20rem;
+        letter-spacing: 0.8125rem;
+      }
+      &-sm {
+        padding: $sp-2 $sp-4;
+        font-size: $fs-5;
+        line-height: 4.5rem;
+        &-icon {
+          width: $fs-5;
+        }
+        svg {
+          width: $fs-5;
+          height: $fs-5;
+        }
+      }
+    }
+  }
+}
