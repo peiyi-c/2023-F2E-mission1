@@ -1,5 +1,6 @@
 @use "../../App.scss" as *;
 .main {
+  padding: 0 $sp-6;
   transition: filter 1s ease-in-out 0.5s;
 
   &.blur {

@@ -77,7 +77,7 @@
 @media only screen and (min-width: 50rem) {
   .hero {
     position: relative; // .hero__candidate
-    padding: 0 $sp-6;
+
     &__candidate {
       position: absolute;
       right: $sp-4;
