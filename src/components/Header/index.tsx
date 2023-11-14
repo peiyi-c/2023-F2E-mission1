@@ -9,10 +9,14 @@ import {
 } from "@phosphor-icons/react";
 import { useContext } from "react";
 import { HashLink } from "react-router-hash-link";
-import { BlurContext } from "../../containers/BlurContext";
+import { BlurContext, BlurContextType } from "../../containers/BlurContext";
 
-export const Header = ({ handleClick, scrollOffset }) => {
-  const { navOpen } = useContext(BlurContext);
+interface HeaderProps {
+  handleClick: () => void;
+  scrollOffset: (el: HTMLElement) => void;
+}
+export const Header = ({ handleClick, scrollOffset }: HeaderProps) => {
+  const { navOpen } = useContext(BlurContext) as BlurContextType;
 
   return (
     <>
@@ -43,7 +47,7 @@ export const Header = ({ handleClick, scrollOffset }) => {
               role="listitem"
             >
               <li>
-                <button className="button-sm">
+                <button className="button-sm" type="button">
                   <HandCoins size={24} />
                   小額捐款
                 </button>
