@@ -1,1 +1,44 @@
 @use "../../App.scss" as *;
+
+.claims {
+  padding: $sp-4 $sp-3;
+  display: flex;
+  flex-direction: column;
+  gap: $sp-3;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: $sp-2;
+
+    h3 {
+      @extend .title-48;
+      color: $lime-1;
+    }
+    h4 {
+      @extend .subtitle;
+      color: $lime-1;
+    }
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: $sp-3;
+    p {
+      @extend .body-16;
+    }
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  .claims {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    &__title {
+      grid-column: 1 / 2;
+    }
+    &__intro {
+      grid-column: 2 / end;
+    }
+  }
+}
