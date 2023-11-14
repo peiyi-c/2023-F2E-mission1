@@ -26,7 +26,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 100;
 
   background-color: $white;
   color: $black;
@@ -47,7 +46,7 @@
     width: 100%;
     li {
       margin-bottom: $sp-3;
-      font-size: $fs-1;
+      @extend .body-16;
     }
   }
   &__icons {
@@ -60,7 +59,7 @@
       align-items: center;
       justify-content: flex-start;
       gap: $sp-1;
-      font-size: $fs-1;
+      @extend .body-16;
     }
   }
 }
