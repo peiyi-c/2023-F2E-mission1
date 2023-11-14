@@ -30,10 +30,41 @@ $fs-2: 1.25rem;
 $fs-3: 1.5rem;
 $fs-4: 1.75rem;
 $fs-5: 3rem;
+$fs-6: 5rem;
 
 // RADIUS //
 
-$radius-1: 3rem;
+$radius-1: 1rem;
+$radius-3: 3rem;
+
+// TYPOGRAPHY //
+.body-16 {
+  font-size: $fs-1;
+  font-weight: 500;
+  line-height: 1.75;
+}
+.subtitle {
+  font-size: $fs-2;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.title-24 {
+  font-size: $fs-3;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.title-28 {
+  font-size: $fs-4;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.title-48 {
+  font-size: $fs-5;
+  font-weight: 700;
+  line-height: 1.5;
+}
 
 /* custom styles */
 :root {
@@ -53,11 +84,34 @@ body {
   margin: 0;
   min-width: 23.4375rem;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
   max-width: 80rem;
   margin: 0 auto;
+}
+
+// z-index management
+$z: 1;
+
+.header {
+  z-index: $z;
+}
+
+.nav {
+  z-index: $z + 100;
+}
+
+.main {
+  z-index: $z;
+  .hero__slogan {
+    z-index: $z - 10;
+  }
+}
+
+.footer {
+  z-index: $z;
 }
 
 hr {
@@ -66,7 +120,7 @@ hr {
 
 .button-sm {
   padding: $sp-2 $sp-3;
-  border-radius: $radius-1;
+  border-radius: $radius-3;
 
   display: flex;
   align-items: center;
