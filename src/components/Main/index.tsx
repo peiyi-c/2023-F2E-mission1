@@ -5,6 +5,7 @@ import { Hero } from "../Hero";
 import { Claims } from "../Claims";
 import { Events } from "../Events";
 import { Policy } from "../Policy";
+import { Donations } from "../Donations";
 
 export const Main = () => {
   const { navOpen } = useContext(BlurContext) as BlurContextType;
@@ -15,6 +16,7 @@ export const Main = () => {
       <Claims />
       <Events />
       <Policy />
+      <Donations />
     </main>
   );
 };
