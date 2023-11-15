@@ -41,6 +41,7 @@
       text-align: center;
       background-color: $lime-5;
       color: $black;
+      border-radius: 0rem 0rem $radius-1 $radius-1;
 
       @include tab-none("1");
       @include tab-none("2");
