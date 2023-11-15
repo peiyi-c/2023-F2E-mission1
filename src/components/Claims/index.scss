@@ -25,6 +25,7 @@
     flex-direction: column;
     gap: $sp-3;
     p {
+      color: $black;
       @extend .body-16;
     }
   }
