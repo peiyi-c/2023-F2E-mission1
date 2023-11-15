@@ -1,9 +1,20 @@
 @use "../../App.scss" as *;
 .main {
-  padding: 0 $sp-6;
   transition: filter 1s ease-in-out 0.5s;
 
   &.blur {
     filter: blur(2px);
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .main {
+    padding: 0 $sp-6;
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  .main {
+    padding: 0;
   }
 }
