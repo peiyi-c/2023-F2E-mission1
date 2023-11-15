@@ -2,7 +2,7 @@ import "./index.scss";
 
 export const Claims = () => {
   return (
-    <article className="claims">
+    <article id="claims" className="claims">
       <div className="claims__title">
         <h3>候選主張</h3>
         <h4>Candidate Claims</h4>
