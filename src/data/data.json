@@ -19,11 +19,6 @@
       "date": "12.20.2023"
     }
   ],
-  "policies_title": [
-    "寵物醫療 保障方案",
-    "寵物休閒 與娛樂場所",
-    "推廣寵物 飼養教育"
-  ],
   "policies": [
     {
       "titles": [
@@ -105,6 +100,32 @@
           ]
         }
       ]
+    }
+  ],
+  "donations": [
+    {
+      "name": "喵衛星",
+      "price": "600",
+      "donators": "2,100",
+      "image": "/src/assets/moon-stars.svg"
+    },
+    {
+      "name": "喵行星",
+      "price": "6,000",
+      "donators": "2,000",
+      "image": "/src/assets/planet.svg"
+    },
+    {
+      "name": "喵恆星",
+      "price": "60,000",
+      "donators": "2,100",
+      "image": "/src/assets/sun.svg"
+    },
+    {
+      "name": "喵彗星",
+      "price": "自訂贊助金額",
+      "donators": "513",
+      "image": "/src/assets/shooting-star.svg"
     }
   ]
 }
