@@ -131,3 +131,44 @@ hr {
     background-color: $lime-2;
   }
 }
+
+.tab-title {
+  padding: $sp-3 calc($sp-2 - $sp-1 / 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+
+  border-radius: $radius-1 $radius-1 0rem 0rem;
+
+  @extend .subtitle;
+  line-height: 1.875rem;
+  text-align: center;
+
+  background-color: $lime-2;
+
+  &:hover {
+    background-color: $lime-3;
+  }
+  &:active {
+    background-color: $lime-5;
+  }
+}
+
+// TABs
+@mixin tab-none($num) {
+  .tab#{$num} {
+    display: none;
+  }
+}
+
+@mixin tab-block($num) {
+  #tab#{$num}:checked ~ div .tab#{$num} {
+    background-color: $lime-5;
+  }
+
+  #tab#{$num}:checked ~ article .tab#{$num} {
+    display: block;
+  }
+}
