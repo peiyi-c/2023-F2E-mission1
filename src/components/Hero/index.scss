@@ -1,7 +1,6 @@
 @use "../../App.scss" as *;
 
 .hero {
-  border: 1px dotted palevioletred; // test
   width: 100%;
 
   display: flex;
@@ -40,9 +39,7 @@
     position: relative;
 
     align-self: center;
-    .wrapper {
-      border: 1px dotted darkcyan;
-    }
+
     &-big {
       text-align: left;
       color: $white;
@@ -79,6 +76,7 @@
     position: relative; // .hero__candidate
 
     &__candidate {
+      padding: 0;
       position: absolute;
       right: $sp-4;
     }
@@ -91,6 +89,7 @@
 @media only screen and (min-width: 62.5rem) {
   .hero {
     &__candidate {
+      padding: $sp-3 0;
     }
     &__slogan {
       &-big {
@@ -108,7 +107,7 @@
 @media only screen and (min-width: 80rem) {
   .hero {
     &__candidate {
-      top: 33%;
+      top: 35%;
     }
     &__slogan {
       &-big {

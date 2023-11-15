@@ -14,19 +14,17 @@ export const Hero = () => {
         </div>
       </div>
       <div className="hero__slogan">
-        <div className="wrapper">
-          <div className="hero__slogan-big">
-            喵喵權益
-            <br />
-            我帶頭
-          </div>
-          <div className="hero__slogan-sm">
-            <img className="hero__slogan-sm-icon" src={vote} />
-            立委請支持
-            <NumberCircleOne size={24} />
-            黑新星
-            <img className="hero__slogan-sm-icon" src={vote} />
-          </div>
+        <div className="hero__slogan-big">
+          喵喵權益
+          <br />
+          我帶頭
+        </div>
+        <div className="hero__slogan-sm">
+          <img className="hero__slogan-sm-icon" src={vote} />
+          立委請支持
+          <NumberCircleOne size={24} />
+          黑新星
+          <img className="hero__slogan-sm-icon" src={vote} />
         </div>
       </div>
     </section>
