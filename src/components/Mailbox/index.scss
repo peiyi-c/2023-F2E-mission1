@@ -1,1 +1,98 @@
 @use "../../App.scss" as *;
+
+.mailbox {
+  padding: $sp-4 $sp-3;
+  &__title {
+    h3 {
+      @extend .title-48;
+      color: $lime-1;
+    }
+    h4 {
+      @extend .subtitle;
+      color: $lime-1;
+    }
+    span {
+      margin: $sp-3 auto;
+      display: block;
+      @extend .title-28;
+      color: $black;
+    }
+    :last-child {
+      @extend .body-16;
+      color: $black;
+    }
+  }
+  &__form {
+    width: 100%;
+    padding: $sp-4 $sp-3;
+    border-radius: $sp-3;
+    background-color: $lime-5;
+
+    display: flex;
+    flex-direction: column;
+    gap: $sp-3;
+
+    .group {
+      label {
+        margin-bottom: $sp-2;
+        display: block;
+        @extend .body-16;
+        color: $black;
+      }
+    }
+
+    textarea,
+    input {
+      width: 100%;
+      padding: calc($sp-3 - $sp-1);
+
+      border-radius: $sp-2;
+      border: 2px solid $grey-4;
+      font-size: 1rem;
+    }
+
+    textarea {
+      height: calc($sp-7 + $sp-4);
+    }
+
+    button {
+      margin-top: $sp-5;
+    }
+  }
+}
+
+@media only screen and (min-width: 50rem) {
+  .mailbox {
+    position: relative; // ::after
+
+    &__form {
+      padding: $sp-4;
+    }
+    &::after {
+      content: "";
+      width: 18.5625rem;
+      height: 21.0625rem;
+      position: absolute;
+      left: 24%;
+      bottom: 2rem;
+      display: block;
+      background-image: url("../../assets/black-02.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media only screen and (min-width: 62.5rem) {
+  .mailbox {
+    display: flex;
+    flex-direction: row;
+    gap: $sp-4;
+    .left {
+      width: calc(5 / 12 * 100%);
+    }
+    .right {
+      width: calc(7 / 12 * 100%);
+    }
+  }
+}

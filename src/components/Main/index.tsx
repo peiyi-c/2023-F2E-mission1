@@ -6,6 +6,7 @@ import { Claims } from "../Claims";
 import { Events } from "../Events";
 import { Policy } from "../Policy";
 import { Donations } from "../Donations";
+import { Mailbox } from "../Mailbox";
 
 export const Main = () => {
   const { navOpen } = useContext(BlurContext) as BlurContextType;
@@ -17,6 +18,7 @@ export const Main = () => {
       <Events />
       <Policy />
       <Donations />
+      <Mailbox />
     </main>
   );
 };

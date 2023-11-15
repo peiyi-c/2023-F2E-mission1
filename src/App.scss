@@ -33,7 +33,6 @@ $fs-5: 3rem;
 $fs-6: 5rem;
 
 // RADIUS //
-
 $radius-1: 1rem;
 $radius-3: 3rem;
 
@@ -108,6 +107,11 @@ $z: 1;
   .hero__slogan {
     z-index: $z - 10;
   }
+  .mailbox {
+    &::after {
+      z-index: $z - 10;
+    }
+  }
 }
 
 .footer {
@@ -132,6 +136,13 @@ hr {
   }
 }
 
+.button-lg {
+  @extend .button-sm;
+  padding: $sp-3 $sp-4;
+  border-radius: $sp-3;
+
+  justify-content: center;
+}
 .tab-title {
   padding: $sp-3 calc($sp-2 - $sp-1 / 2);
 

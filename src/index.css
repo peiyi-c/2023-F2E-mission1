@@ -37,9 +37,7 @@ select {
   }
 }
 
-input,
-button,
-textarea {
+button {
   background-color: inherit;
 }
 
