@@ -42,7 +42,7 @@ export const Header = ({ handleClick, scrollOffset }: HeaderProps) => {
           <ul className="nav__links" role="list">
             <HashLink
               smooth
-              to="/#donation"
+              to="/#donations"
               scroll={scrollOffset}
               role="listitem"
             >
