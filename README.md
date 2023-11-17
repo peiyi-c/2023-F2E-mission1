@@ -14,57 +14,68 @@ This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 ## File structure
 
 ```
-- node_modules
-- public
-   ...
-- src
-	- assets
-		...
-	- components
-		Header
-			index.tsx
-			index.scss
-		Main
-			index.tsx
-			index.scss
-		Hero
-			index.tsx
-			index.scss
-		Claims
-			index.tsx
-			index.scss
-		Events
-			index.tsx
-			index.scss
-		Donations
-			index.tsx
-			index.scss
-		Policy
-			index.tsx
-			index.scss
-		Mailbox
-			index.tsx
-			index.scss
-		Footer
-			index.tsx
-			index.scss
-	- containers
-		BlurContext
-			index.tsx
-		HeaderContainer
-			index.tsx
-	- data
-		data.js
-	- utilities
-		helpers.ts
-	App.scss
-	App.tsx
-	index.css
-	main.tsx
-
-.gitignore
-index.html
+├── node_modules
+├── public
+├── src
+│   ├── assets
+│   ├──components
+│   │     ├── Header
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Main
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Hero
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Claims
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Events
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── onations
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Policy
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     ├── Mailbox
+│   │     │   ├── index.tsx
+│   │     │   └── index.scss
+│   │     │
+│   │     └── Footer
+│   │         ├── index.tsx
+│   │         └── index.scss
+│   │
+│   ├── containers
+│   │     ├── BlurContext
+│   │     │   └──index.tsx
+│   │     │
+│   │     └── HeaderContainer
+│   │         └── index.tsx
+│   ├── data
+│   │     └── data.js
+│   │
+│   ├── utilities
+│   │     └── helpers.js
+│   │
+│   ├── App.scss
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── .gitignore
+├── index.html
 ...
+└── README.md
 
 ```
 
