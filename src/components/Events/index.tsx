@@ -2,6 +2,7 @@ import "./index.scss";
 import data from "../../data/data.json";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import TrackVisibility from "react-on-screen";
+import pic1 from "../../assets/pic-01.svg";
 
 export const Events = () => {
   const { articles } = data;
