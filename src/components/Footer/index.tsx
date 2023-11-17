@@ -8,23 +8,34 @@ import {
   Phone,
   Envelope,
 } from "@phosphor-icons/react";
+import { useContext } from "react";
 import { HashLink } from "react-router-hash-link";
+import { scrollOffset } from "../../utilities/helpers";
+import { BlurContext, BlurContextType } from "../../containers/BlurContext";
 
 export const Footer = () => {
+  const { blur } = useContext(BlurContext) as BlurContextType;
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${blur ? "blur" : ""}`}>
       <section>
         <div className="left">
           <img className="footer__logo" src={logo2} role="logo2" />
           <ul className="footer__social" role="list">
             <li>
-              <FacebookLogo size={32} color="#ffffff" />
+              <a href="https://www.facebook.com/" target="_blank">
+                <FacebookLogo size={32} color="#ffffff" />
+              </a>
             </li>
             <li>
-              <InstagramLogo size={32} color="#ffffff" />
+              <a href="https://www.instagram.com/" target="_blank">
+                <InstagramLogo size={32} color="#ffffff" />
+              </a>
             </li>
             <li>
-              <YoutubeLogo size={32} color="#ffffff" />
+              <a href="https://www.youtube.com/" target="_blank">
+                <YoutubeLogo size={32} color="#ffffff" />
+              </a>
             </li>
           </ul>
         </div>
@@ -35,13 +46,28 @@ export const Footer = () => {
               <HashLink to="#top" smooth role="listitem">
                 <li>首頁</li>
               </HashLink>
-              <HashLink to="#events" smooth role="listitem">
+              <HashLink
+                smooth
+                to="/#events"
+                scroll={scrollOffset}
+                role="listitem"
+              >
                 <li>最新活動</li>
               </HashLink>
-              <HashLink to="#policy" smooth role="listitem">
+              <HashLink
+                smooth
+                to="/#policy"
+                scroll={scrollOffset}
+                role="listitem"
+              >
                 <li>政策議題</li>
               </HashLink>
-              <HashLink to="#donations" smooth role="listitem">
+              <HashLink
+                smooth
+                to="/#donations"
+                scroll={scrollOffset}
+                role="listitem"
+              >
                 <li>小額捐款</li>
               </HashLink>
             </ul>
@@ -59,7 +85,9 @@ export const Footer = () => {
               </li>
               <li className="item">
                 <Envelope size={16} color="#D1FA31" />
-                supernova.black@gmail.com
+                <a href="mailto:supernova.black@gmail.com">
+                  supernova.black@gmail.com
+                </a>
               </li>
             </ul>
           </div>
