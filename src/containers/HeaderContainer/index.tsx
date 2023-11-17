@@ -1,26 +1,23 @@
 import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { BlurContext } from "../BlurContext";
-
 type BlurContextType = {
-  navOpen?: boolean;
-  setNavOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+  blur?: boolean;
+  setBlur?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 function HeaderContainer() {
-  const { setNavOpen } = useContext(BlurContext) as BlurContextType;
+  const { setBlur } = useContext(BlurContext) as BlurContextType;
 
   const handleClick = () => {
-    setNavOpen && setNavOpen((navOpen: boolean) => !navOpen);
+    if (window.innerWidth < 1210) {
+      setBlur && setBlur((blur: boolean) => !blur);
+    } else {
+      setBlur && setBlur(false);
+    }
   };
 
-  const scrollOffset = (el: HTMLElement) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -48;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
-
-  return <Header handleClick={handleClick} scrollOffset={scrollOffset} />;
+  return <Header handleClick={handleClick} />;
 }
 
 export default HeaderContainer;
