@@ -70,8 +70,8 @@ index.html
 
 ## UI Design
 
-[PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
+- Design By: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
 
 ## Other Source
 
-Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
+- Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
