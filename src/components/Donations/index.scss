@@ -59,6 +59,19 @@
       background-color: $white;
       align-items: flex-start;
 
+      &:hover {
+        color: $lime-2;
+        background-color: $black;
+
+        .option-donator {
+          color: $black;
+          transform: scale(1.05);
+        }
+        .NT {
+          color: $lime-5;
+        }
+      }
+
       > div {
         display: flex;
         flex-direction: column;
@@ -82,6 +95,7 @@
       &-image {
         display: none;
         width: calc($fs-1 + $fs-6);
+        animation: updown 3s linear infinite;
       }
     }
   }
@@ -123,5 +137,17 @@
         margin-bottom: $sp-1;
       }
     }
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-$sp-1);
+  }
+  50% {
+    transform: translateY($sp-1);
+  }
+  100% {
+    transform: translateY(-$sp-1);
   }
 }

@@ -1,5 +1,7 @@
 import "./index.scss";
 import data from "../../data/data.json";
+import TrackVisibility from "react-on-screen";
+import CountUp from "react-countup";
 
 export const Donations = () => {
   const { donations } = data;
@@ -14,7 +16,19 @@ export const Donations = () => {
         </div>
         <div className="donations__sum">
           <h5>目前贊助總金額</h5>
-          <span>987,655,873</span>
+          <TrackVisibility>
+            {({ isVisible }) =>
+              isVisible && (
+                <CountUp
+                  start={90000000}
+                  end={987655873}
+                  duration={3.25}
+                  separator=","
+                  delay={0}
+                />
+              )
+            }
+          </TrackVisibility>
         </div>
       </div>
 
@@ -26,6 +40,7 @@ export const Donations = () => {
                 {donation.name}｜<span className="NT">NT$</span>{" "}
                 {donation.price}
               </span>
+
               <span className="option-donator">
                 已有 {donation.donators} 人贊助
               </span>
