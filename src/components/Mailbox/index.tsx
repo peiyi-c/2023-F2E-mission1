@@ -1,4 +1,5 @@
 import "./index.scss";
+import TrackVisibility from "react-on-screen";
 
 export const Mailbox = () => {
   return (
@@ -14,27 +15,37 @@ export const Mailbox = () => {
         </div>
       </div>
       <div className="right">
-        <form className="mailbox__form">
-          <div className="group">
-            <label htmlFor="name">姓名 Name</label>
-            <input type="text" name="name" id="name" required />
-          </div>
-          <div className="group">
-            <label htmlFor="email">信箱 Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-          <div className="group">
-            <label htmlFor="phone">電話/手機 Phone</label>
-            <input type="phone" name="phone" id="phone" />
-          </div>
-          <div className="group">
-            <label htmlFor="suggestion">對我們的建議 Suggestion</label>
-            <textarea name="suggestion" id="suggestion" required />
-          </div>
-          <button className="button-lg" role="submit">
-            確認送出
-          </button>
-        </form>
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <form
+              className={
+                isVisible
+                  ? "animate__animated animate__headShake mailbox__form"
+                  : "mailbox__form"
+              }
+            >
+              <div className="group">
+                <label htmlFor="name">姓名 Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div className="group">
+                <label htmlFor="email">信箱 Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div className="group">
+                <label htmlFor="phone">電話/手機 Phone</label>
+                <input type="phone" name="phone" id="phone" />
+              </div>
+              <div className="group">
+                <label htmlFor="suggestion">對我們的建議 Suggestion</label>
+                <textarea name="suggestion" id="suggestion" required />
+              </div>
+              <button className="button-lg" role="submit">
+                確認送出
+              </button>
+            </form>
+          )}
+        </TrackVisibility>
       </div>
     </section>
   );

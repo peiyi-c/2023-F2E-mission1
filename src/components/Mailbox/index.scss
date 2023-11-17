@@ -49,6 +49,9 @@
       border-radius: $sp-2;
       border: 2px solid $grey-4;
       font-size: 1rem;
+      &:focus {
+        border: 2px solid $grey-2;
+      }
     }
 
     textarea {
