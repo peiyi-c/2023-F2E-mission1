@@ -90,23 +90,23 @@ https://peiyi-c.github.io/2023-F2E-mission1/
 </details>
 
 
-## Screen Shot
+## Screenshot
 <details>
-<summary>Click to open screen shot (Desktop)</summary>
+<summary> Screenshot Desktop</summary>
   
 ![Opera Snapshot](https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/cff6f154-77b3-45c7-96fa-d63e0e77f83a)
 </details>
 
 <details>
-<summary>Click to open screen shot (Mobile)</summary>
+<summary> Screenshot Mobile</summary>
   
 ![Opera Snapshot](https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/74fdebce-af4c-4fd0-a33f-3d82dfe0e444)
 </details>
 
-## UI Design
 
-- Design By: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
+## UI Design & Other Resource
 
-## Other Source
+Design By: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
 
-- Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
+
+Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
