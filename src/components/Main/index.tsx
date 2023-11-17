@@ -9,10 +9,10 @@ import { Donations } from "../Donations";
 import { Mailbox } from "../Mailbox";
 
 export const Main = () => {
-  const { navOpen } = useContext(BlurContext) as BlurContextType;
+  const { blur } = useContext(BlurContext) as BlurContextType;
 
   return (
-    <main className={`main ${navOpen ? "blur" : ""}`}>
+    <main className={`main ${blur ? "blur" : ""}`}>
       <Hero />
       <Claims />
       <Events />

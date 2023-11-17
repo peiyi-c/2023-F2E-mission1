@@ -10,26 +10,29 @@ import {
 import { useContext } from "react";
 import { HashLink } from "react-router-hash-link";
 import { BlurContext, BlurContextType } from "../../containers/BlurContext";
+import { scrollOffset } from "../../utilities/helpers";
 
 interface HeaderProps {
   handleClick: () => void;
-  scrollOffset: (el: HTMLElement) => void;
 }
-export const Header = ({ handleClick, scrollOffset }: HeaderProps) => {
-  const { navOpen } = useContext(BlurContext) as BlurContextType;
+export const Header = ({ handleClick }: HeaderProps) => {
+  const { blur } = useContext(BlurContext) as BlurContextType;
 
   return (
     <>
       <header className="header" role="heading">
-        <img
-          className="header__logo"
-          src={logo1}
-          role="img"
-          aria-label="website logo"
-        />
+        <HashLink to="#top">
+          <img
+            className="header__logo"
+            src={logo1}
+            role="img"
+            aria-label="website logo"
+          />
+        </HashLink>
+
         <List onClick={handleClick} className="header__icon" size={32} />
         <nav
-          className={`nav ${navOpen ? "open" : ""}`}
+          className={`nav ${blur ? "open" : ""}`}
           role="navigation"
           onClick={handleClick}
         >
@@ -88,18 +91,24 @@ export const Header = ({ handleClick, scrollOffset }: HeaderProps) => {
           </ul>
           <hr className="nav__hr" />
           <ul className="nav__icons" role="list">
-            <li>
-              <FacebookLogo size={32} />
-              <span className="nav__icons-name">Facebook</span>
-            </li>
-            <li>
-              <InstagramLogo size={32} />
-              <span className="nav__icons-name">Instagram</span>
-            </li>
-            <li>
-              <YoutubeLogo size={32} />{" "}
-              <span className="nav__icons-name">Youtube</span>
-            </li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <li>
+                <FacebookLogo size={32} />
+                <span className="nav__icons-name">Facebook</span>
+              </li>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <li>
+                <InstagramLogo size={32} />
+                <span className="nav__icons-name">Instagram</span>
+              </li>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <li>
+                <YoutubeLogo size={32} />{" "}
+                <span className="nav__icons-name">Youtube</span>
+              </li>
+            </a>
           </ul>
         </nav>
       </header>
