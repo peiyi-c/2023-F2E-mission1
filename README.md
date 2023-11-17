@@ -1,27 +1,83 @@
-# React + TypeScript + Vite
+# THE F2E 2023 - Mission 1 立委競選官網
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 
-Currently, two official plugins are available:
+## Built with
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML
+- CSS, SCSS
+- animate.css
+- React, React Router, React Router Hash Link
+- Countup.js
+- TypeScript
 
-## Expanding the ESLint configuration
+## File structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```
+- node_modules
+- public
+   ...
+- src
+	- assets
+			black-01.svg
+			black-02.svg
+			logo-01.svg
+			logo-02.svg
+			pic-01.svg
+			pic-02.svg
+			pic-03.svg
+			vote.svg
+			...
+	- components
+			Header
+				index.tsx
+				index.scss
+			Main
+				index.tsx
+				index.scss
+			Hero
+				index.tsx
+				index.scss
+			Claims
+				index.tsx
+				index.scss
+			Events
+				index.tsx
+				index.scss
+			Donations
+				index.tsx
+				index.scss
+			Policy
+				index.tsx
+				index.scss
+			Mailbox
+				index.tsx
+				index.scss
+			Footer
+				index.tsx
+				index.scss
+	- containers
+			BlurContext
+				index.tsx
+			HeaderContainer
+				index.tsx
+	- data
+		data.js
+	- utilities
+		helpers.ts
+	App.scss
+	App.tsx
+	index.css
+	main.tsx
 
-- Configure the top-level `parserOptions` property like this:
+.gitignore
+index.html
+...
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Design credits
+
+- UI Design: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
+
+- Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
