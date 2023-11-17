@@ -2,6 +2,8 @@
 
 This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 
+![Cover](https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/b36f2e68-bdb9-4634-8764-44effb0b3b63)
+
 ## Built with
 
 - HTML
@@ -11,7 +13,13 @@ This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 - Countup.js
 - TypeScript
 
+## Live Link
+https://peiyi-c.github.io/2023-F2E-mission1/
+
 ## File structure
+
+<details>
+<summary>Click to open file structure</summary>
 
 ```
 ├── node_modules
@@ -78,6 +86,22 @@ This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 └── README.md
 
 ```
+
+</details>
+
+
+## Screen Shot
+<details>
+<summary>Click to open screen shot (Desktop)</summary>
+  
+![Opera Snapshot](https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/cff6f154-77b3-45c7-96fa-d63e0e77f83a)
+</details>
+
+<details>
+<summary>Click to open screen shot (Mobile)</summary>
+  
+![Opera Snapshot](https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/74fdebce-af4c-4fd0-a33f-3d82dfe0e444)
+</details>
 
 ## UI Design
 
