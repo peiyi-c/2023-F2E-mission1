@@ -48,7 +48,7 @@ export const Footer = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#events"
+                to="/2023-F2E-mission1/#events"
                 scroll={scrollOffset}
                 role="listitem"
               >
@@ -56,7 +56,7 @@ export const Footer = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#policy"
+                to="/2023-F2E-mission1/#policy"
                 scroll={scrollOffset}
                 role="listitem"
               >
@@ -64,7 +64,7 @@ export const Footer = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#donations"
+                to="/2023-F2E-mission1/#donations"
                 scroll={scrollOffset}
                 role="listitem"
               >

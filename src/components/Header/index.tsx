@@ -58,7 +58,7 @@ export const Header = ({ handleClick }: HeaderProps) => {
             </HashLink>
             <HashLink
               smooth
-              to="/#claims"
+              to="/2023-F2E-mission1/#claims"
               scroll={scrollOffset}
               role="listitem"
             >
@@ -66,7 +66,7 @@ export const Header = ({ handleClick }: HeaderProps) => {
             </HashLink>
             <HashLink
               smooth
-              to="/#events"
+              to="/2023-F2E-mission1/#events"
               scroll={scrollOffset}
               role="listitem"
             >
@@ -74,7 +74,7 @@ export const Header = ({ handleClick }: HeaderProps) => {
             </HashLink>
             <HashLink
               smooth
-              to="/#policy"
+              to="/2023-F2E-mission1/#policy"
               scroll={scrollOffset}
               role="listitem"
             >
@@ -82,7 +82,7 @@ export const Header = ({ handleClick }: HeaderProps) => {
             </HashLink>
             <HashLink
               smooth
-              to="/#mailbox"
+              to="/2023-F2E-mission1/#mailbox"
               scroll={scrollOffset}
               role="listitem"
             >
