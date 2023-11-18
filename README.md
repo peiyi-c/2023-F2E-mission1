@@ -9,12 +9,15 @@ This is my solution to mission 1 in [THE F2E 2023](https://2023.thef2e.com/).
 - HTML
 - CSS, SCSS
 - animate.css
-- React, React Router, React Router Hash Link
+- React
+- React Router
+- React Router Hash Link
 - Countup.js
 - TypeScript
 
-## Live Link
-https://peiyi-c.github.io/2023-F2E-mission1/
+## Live link
+- [View Demo](https://peiyi-c.github.io/2023-F2E-mission1/)
+
 
 ## File structure
 
@@ -104,9 +107,8 @@ https://peiyi-c.github.io/2023-F2E-mission1/
 </details>
 
 
-## UI Design & Other Resource
+## Acknowledgments
 
-Design By: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
-
+Design credits: [PinpinChen](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
 
 Icon Source: [Phosphor-Icons](https://github.com/phosphor-icons/homepage#phosphor-icons)
